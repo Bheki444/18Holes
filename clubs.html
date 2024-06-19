@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLF</title>
+    <link rel="stylesheet" href="clubs.css">
+</head>
+<body>
+    
+     
+    
+    <header>
+        <div class="container">
+            <div class="sub-container">
+                <div class="nav-branding">
+                    <img src="C:\Users\bheki\Downloads\Golf_Wang_Logo.png" alt="Golf Logo" class="logo">
+                
+              </div>
+              <div class="heading">Clubs</div>                                            
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="main" id="main1">
+        <br>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Club Name</th>
+                    <th>Club Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Driver</td>
+                    <td>Used for long-distance tee shots</td>
+                </tr>
+                <tr>
+                    <td>Woods</td>
+                    <td>Used for long fairway shots</td>
+                </tr>
+                <tr>
+                    <td>Hybrids</td>
+                    <td>Used for mid-range shots<br>
+                    Similar to Woods. These clubs are dynamic and fairly new to the game.</td>
+                </tr>
+                <tr>
+                    <td>Irons</td>
+                    <td>Used for shorter, more accurate shots</td>
+                </tr>
+                <tr>
+                    <td>Wedges</td>
+                    <td>Used for bunker shots and short approach shots</td>
+                </tr>
+                <td>Putter</td>
+                <td>Used on the green to sink the ball.</td>
+            </tr>
+            </tbody>
+        </table>
+        <a href="golfboys.html" class="button">RETURN TO MAIN PAGE</a>
+    </div>
+    
+    <footer id="footer">
+        <h3>WEBDEV © 2024</h3>
+        <h3>DEVELOPED BY B.MHLONGO</h3>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            var footer = document.getElementById('footer');
+            var scrollPosition = window.innerHeight + window.scrollY;
+            var pageHeight = document.body.offsetHeight;
+
+            if (scrollPosition >= pageHeight) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+    </script>
+    
+
+    <script src="golfboys.js"></script>
+</body>
+</html>

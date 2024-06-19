@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 1000;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    padding: 15 px 35px;
+}
+.sub-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-branding{
+    display: flex;
+    align-items: center;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.heading{
+    font-weight: 100;
+    font-family: Brush Script MT, cursive ;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-left: 200px;
+}
+ 
+.content1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+    background:none;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+  
+}
+.content2 {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    background:none;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+.content3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background:none;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content4 {
+    position: absolute;
+    bottom: 70px;
+    right: 10%;
+    color: rgb(0, 0, 0);
+    background: none;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+  
+}
+.content5 {
+    position: absolute;
+    top: 20px;
+    right: 1%;
+    color: rgb(255, 255, 255);
+    background: none;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+li {
+    list-style: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.logo {
+    height: 30px;
+    width: auto;
+}
+
+#section1 {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/024/560/840/non_2x/golfer-playing-on-green-golf-course-meadow-generated-by-ai-free-photo.jpg");
+   
+}
+
+#section2 {
+    background-image: url('https://assets.ltkcontent.com/images/185783/GettyImages-1294043488_27c5571306.webp');
+}
+
+#section3 {
+    background-image: url('https://images3.alphacoders.com/551/thumb-1920-551120.jpg');
+}
+#section4 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Wisconsin_golf_hole_sign.jpg/1280px-Wisconsin_golf_hole_sign.jpg');
+}
+#section5 {
+    background-image: url('https://wallpapercave.com/wp/wp2098254.jpg');
+}
+form{
+    background-color: darkgrey;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+}
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    right: 24px ;
+    background-color: #262626;
+    padding: 10px;
+    border-radius: 5px;
+}
+.bar1 {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: rgb(32, 155, 63);
+}
+.bar2 {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: rgb(102, 200, 249);
+}
+.bar3 {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: rgb(255, 249, 67);
+}
+.nav-menu.active {
+ 
+    display: flex;
+    
+}
+.nav-item {
+    margin: 16px 0;
+}
+.hamburger {
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: auto;
+    background-color: rgba(0, 255, 255, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+ 
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background:none;
+    padding: 20px;
+    border-radius: 5px;
+}
+.section .content-box {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.content-box {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+}
+.content1 h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    background: none;  
+    color: black;
+}
+.h2 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    width: 80%; 
+    line-height: 1.2; 
+}
+p1{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+
+}
+p2{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+
+}
+.heading:hover{
+    text-decoration: underline;
+}
+.button {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    background-color: rgba(30, 143, 255, 0);
+    border-style: outset;
+    border-radius: 5px;
+    text-decoration-style: dotted;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: rgb(159, 159, 159);
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black; 
+    text-align: center;
+    padding: 20px 0;
+    display: none;
+    justify-content: center;
+}
+footer h3 {
+    margin: 0 20px;
+    color: white;
+    font-size: small;
+    
+}
+.menu-right {
+    display: flex;
+    align-items: center;
+}
+
+.shopbutton {
+    background-color: #ff5f5f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.underline{
+    text-decoration: underline;
+    font-size:30px ;
+}
+#liveType{
+    display: inline;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.cursor{
+    display: inline;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    animation: blink 1s step-end infinite;
+}
+@keyframes blink{
+    from, to {visibility: hidden;}
+    50% {visibility: visible;}
+}
